@@ -10,16 +10,16 @@ namespace JonathanGraduationBookApp.Core.Services
 	{ // CRUDL - create (add), read (get), update, delete (remove), list
 
 		//Create
-		BookModel Add(BookModel type);
+		BookModel Add(BookModel newBook);
 		
 		//Read
 		BookModel Get(int id);
 		
 		//Update
-		BookModel Update(BookModel type);
+		BookModel Update(BookModel newBook);
 		
 		//Delete
-		void Remove(BookModel type);
+		void Remove(BookModel newBook);
 		
 		//List
 		IEnumerable<BookModel> GetAll();

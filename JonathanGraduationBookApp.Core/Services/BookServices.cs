@@ -7,7 +7,7 @@ namespace JonathanGraduationBookApp.Core.Services
 {
 	class BookServices : IBookServices
 	{
-		public BookModel Add(BookModel type)
+		public BookModel Add(BookModel newBook)
 		{
 			throw new NotImplementedException();
 		}
@@ -27,12 +27,12 @@ namespace JonathanGraduationBookApp.Core.Services
 			throw new NotImplementedException();
 		}
 
-		public void Remove(BookModel type)
+		public void Remove(BookModel newBook)
 		{
 			throw new NotImplementedException();
 		}
 
-		public BookModel Update(BookModel type)
+		public BookModel Update(BookModel newBook)
 		{
 			throw new NotImplementedException();
 		}
