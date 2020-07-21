@@ -5,7 +5,7 @@ using JonathanGraduationBookApp.Core.Model;
 
 namespace JonathanGraduationBookApp.Core.Services
 {
-	interface IBookRepository
+	public interface IBookRepository
 	{
 		BookModel Add(BookModel book);
 		BookModel Update(BookModel book);
