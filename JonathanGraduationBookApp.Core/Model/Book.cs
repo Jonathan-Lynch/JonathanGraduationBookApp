@@ -4,7 +4,7 @@ using System.Text;
 
 namespace JonathanGraduationBookApp.Core.Model
 {
-	public class BookModel
+	public class Book
 	{
 		public int Id { get; set; }
 		public string Title { get; set; }
@@ -12,7 +12,7 @@ namespace JonathanGraduationBookApp.Core.Model
 
 		//connects too AuthorModel
 		public int AuthorId { get; set; }
-		public AuthorModel Author { get; set; }
+		public Author Author { get; set; }
 
 	}
 }

@@ -5,8 +5,8 @@ namespace JonathanGraduationBookApp.Infrastructure.Data
 {
 	public class AppDbContext : DbContext
 	{
-		public DbSet<BookModel> Books { get; set; }
-		public DbSet<AuthorModel> Authors { get; set; }
+		public DbSet<Book> Books { get; set; }
+		public DbSet<Author> Authors { get; set; }
 
 		// This method runs once when the DbContext is first used.
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

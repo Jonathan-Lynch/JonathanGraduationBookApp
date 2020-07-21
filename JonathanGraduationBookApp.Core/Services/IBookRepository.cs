@@ -7,10 +7,10 @@ namespace JonathanGraduationBookApp.Core.Services
 {
 	public interface IBookRepository
 	{
-		BookModel Add(BookModel book);
-		BookModel Update(BookModel book);
-		BookModel Get(int id);
-		IEnumerable<BookModel> GetAll();
+		Book Add(Book book);
+		Book Update(Book book);
+		Book Get(int id);
+		IEnumerable<Book> GetAll();
 		void Remove(int id);
 	}
 }

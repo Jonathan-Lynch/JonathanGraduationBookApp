@@ -7,10 +7,10 @@ namespace JonathanGraduationBookApp.Core.Services
 {
 	public interface IAuthorRepository
 	{
-		AuthorModel Add(AuthorModel author);
-		AuthorModel Get(int id);
-		IEnumerable<AuthorModel> GetAll();
-		AuthorModel Update(AuthorModel author);
+		Author Add(Author author);
+		Author Get(int id);
+		IEnumerable<Author> GetAll();
+		Author Update(Author author);
 		void Remove(int id);
 	}
 }

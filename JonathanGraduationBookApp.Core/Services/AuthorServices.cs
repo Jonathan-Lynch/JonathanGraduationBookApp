@@ -13,17 +13,17 @@ namespace JonathanGraduationBookApp.Core.Services
 			_authorServices = authorServices;
 		}
 
-		public AuthorModel Add(AuthorModel newAuthor)
+		public Author Add(Author newAuthor)
 		{
 			return _authorServices.Add(newAuthor);
 		}
 
-		public AuthorModel Get(int id)
+		public Author Get(int id)
 		{
 			return _authorServices.Get(id);
 		}
 
-		public IEnumerable<AuthorModel> GetAll()
+		public IEnumerable<Author> GetAll()
 		{
 			return _authorServices.GetAll();
 		}
@@ -33,7 +33,7 @@ namespace JonathanGraduationBookApp.Core.Services
 			_authorServices.Remove(id);
 		}
 
-		public AuthorModel Update(AuthorModel updateAuthor)
+		public Author Update(Author updateAuthor)
 		{
 			return _authorServices.Update(updateAuthor);
 		}

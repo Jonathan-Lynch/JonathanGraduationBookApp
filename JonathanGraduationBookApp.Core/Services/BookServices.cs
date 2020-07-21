@@ -14,22 +14,22 @@ namespace JonathanGraduationBookApp.Core.Services
 			_bookRepository = bookRepository;
 		}
 
-		public BookModel Add(BookModel newBook)
+		public Book Add(Book newBook)
 		{
 			return _bookRepository.Add(newBook);
 		}
 
-		public BookModel Get(int id)
+		public Book Get(int id)
 		{
 			return _bookRepository.Get(id);
 		}
 
-		public IEnumerable<BookModel> GetAll()
+		public IEnumerable<Book> GetAll()
 		{
 			return _bookRepository.GetAll();
 		}
 
-		public IEnumerable<BookModel> GetBooksForAuthor(int id)
+		public IEnumerable<Book> GetBooksForAuthor(int id)
 		{
 			return _bookRepository.GetAll();
 		}
@@ -39,7 +39,7 @@ namespace JonathanGraduationBookApp.Core.Services
 			_bookRepository.Remove(id);
 		}
 
-		public BookModel Update(BookModel updateBook)
+		public Book Update(Book updateBook)
 		{
 			return _bookRepository.Update(updateBook);
 		}
