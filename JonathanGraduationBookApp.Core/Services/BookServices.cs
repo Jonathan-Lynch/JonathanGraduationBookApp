@@ -7,34 +7,41 @@ namespace JonathanGraduationBookApp.Core.Services
 {
 	class BookServices : IBookServices
 	{
+		private readonly IBookRepository _bookRepository;
+		
+		public BookServices(IBookRepository bookRepository)
+		{
+			_bookRepository = bookRepository;
+		}
+
 		public BookModel Add(BookModel newBook)
 		{
-			throw new NotImplementedException();
+			return _bookRepository.Add(newBook);
 		}
 
 		public BookModel Get(int id)
 		{
-			throw new NotImplementedException();
+			return _bookRepository.Get(id);
 		}
 
 		public IEnumerable<BookModel> GetAll()
 		{
-			throw new NotImplementedException();
+			return _bookRepository.GetAll();
 		}
 
 		public IEnumerable<BookModel> GetBooksForAuthor(int id)
 		{
-			throw new NotImplementedException();
+			return _bookRepository.GetAll();
 		}
 
-		public void Remove(BookModel newBook)
+		public void Remove(int id)
 		{
-			throw new NotImplementedException();
+			_bookRepository.Remove(id);
 		}
 
-		public BookModel Update(BookModel newBook)
+		public BookModel Update(BookModel updateBook)
 		{
-			throw new NotImplementedException();
+			return _bookRepository.Update(updateBook);
 		}
 	}
 }

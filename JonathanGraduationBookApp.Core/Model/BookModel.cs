@@ -14,8 +14,5 @@ namespace JonathanGraduationBookApp.Core.Model
 		public int AuthorId { get; set; }
 		public AuthorModel Author { get; set; }
 
-		//connects too PublisherModel
-		public int PublisherId { get; set; }
-		public PublisherModel Publisher { get; set; }
 	}
 }
