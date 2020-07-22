@@ -22,7 +22,8 @@ namespace JonathanGraduationBookApp.Controllers
 		[HttpGet]
 		public IActionResult Get()
 		{
-			var 
+			var bookModels = _bookServices.GetAll().ToApiModels();
+
 		}
 	}
 }
