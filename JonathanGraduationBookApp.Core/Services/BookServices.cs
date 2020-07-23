@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace JonathanGraduationBookApp.Core.Services
 {
 	class BookServices : IBookServices
@@ -34,9 +33,9 @@ namespace JonathanGraduationBookApp.Core.Services
 			return _bookRepository.GetAll();
 		}
 
-		public void Remove(int id)
+		public void Remove(Book book)
 		{
-			_bookRepository.Remove(id);
+			_bookRepository.Remove(book);
 		}
 
 		public Book Update(Book updateBook)

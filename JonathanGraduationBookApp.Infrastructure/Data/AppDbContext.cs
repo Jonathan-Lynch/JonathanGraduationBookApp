@@ -17,10 +17,6 @@ namespace JonathanGraduationBookApp.Infrastructure.Data
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
 			base.OnModelCreating(builder);
-			//builder.Entity<AuthorModel>().HasData(
-			//	 new AuthorModel { Id = 1, FirstName = "John", LastName = "Steinbeck" },
-			//	 new AuthorModel { Id = 2, FirstName = "Stephen", LastName = "King" }
-			//	);
 		}
 
 	}
