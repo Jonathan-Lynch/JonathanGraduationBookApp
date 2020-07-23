@@ -68,7 +68,7 @@ namespace JonathanGraduationBookApp.Controllers
 		{
 			var book = _bookServices.Get(id);
 			if (book == null) return NotFound();
-			_bookServices.Remove(book);
+			_bookServices.Remove(id);
 			return NoContent();
 		}
 	}

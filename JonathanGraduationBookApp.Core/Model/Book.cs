@@ -9,8 +9,6 @@ namespace JonathanGraduationBookApp.Core.Model
 		public int Id { get; set; }
 		public string Title { get; set; }
 		public string Genre { get; set; }
-
-		//connects too AuthorModel
 		public int AuthorId { get; set; }
 		public Author Author { get; set; }
 
