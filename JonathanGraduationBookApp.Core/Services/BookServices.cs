@@ -33,9 +33,9 @@ namespace JonathanGraduationBookApp.Core.Services
 			return _bookRepository.GetAll();
 		}
 
-		public void Remove(Book book)
+		public void Remove(int id)
 		{
-			_bookRepository.Remove(book);
+			_bookRepository.Remove(id);
 		}
 
 		public Book Update(Book updateBook)

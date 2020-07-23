@@ -19,7 +19,7 @@ namespace JonathanGraduationBookApp.Core.Services
 		Book Update(Book newBook);
 		
 		//Delete
-		void Remove(Book newBook);
+		void Remove(int id);
 		
 		//List
 		IEnumerable<Book> GetAll();
