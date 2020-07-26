@@ -42,7 +42,7 @@ namespace JonathanGraduationBookApp.Infrastructure.Data
 			var currentAuthor = _appDbContext.Authors.Include(a => a.Id == id);
 			if (currentAuthor == null)
 			{
-				_appDbContext.Authors.Remove(currentAuthor);
+				_appDbContext.Authors.Remove((Author)currentAuthor);
 				_appDbContext.SaveChanges();
 			}
 		}

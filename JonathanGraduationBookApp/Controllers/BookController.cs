@@ -44,7 +44,6 @@ namespace JonathanGraduationBookApp.Controllers
 			try
 			{
 				_bookServices.Add(newBook.ToDomainModel());
-
 			}
 			catch (System.Exception ex)
 			{
