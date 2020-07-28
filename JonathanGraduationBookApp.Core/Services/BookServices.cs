@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 namespace JonathanGraduationBookApp.Core.Services
 {
-	class BookServices : IBookServices
+	public class BookServices : IBookServices
 	{
 		private readonly IBookRepository _bookRepository;
 		

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using JonathanGraduationBookApp.Core.Model;
+using JonathanGraduationBookApp.Core.Services;
 using JonathanGraduationBookApp.Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -30,6 +32,13 @@ namespace JonathanGraduationBookApp
 		{
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 			//services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source = books.db"));
+
+			services.AddDbContext<AppDbContext>();
+
+			services.AddScoped<IBookRepository, BookRepository>();
+			services.AddScoped<IAuthorRepository, AuthorRepository>();
+			services.AddScoped<IBookServices, BookServices>();
+			services.AddScoped<IAuthorServices, AuthorServices>();
 
 		}
 

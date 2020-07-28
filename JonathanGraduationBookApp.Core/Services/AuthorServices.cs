@@ -5,7 +5,7 @@ using System.Text;
 
 namespace JonathanGraduationBookApp.Core.Services
 {
-	class AuthorServices : IAuthorServices
+	public class AuthorServices : IAuthorServices
 	{
 		private readonly IAuthorServices _authorServices;
 		public AuthorServices(IAuthorServices authorServices)
